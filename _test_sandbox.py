@@ -70,3 +70,4 @@ func("example.txt", "w").write("meow >>")
         with self.assertRaises(KeyError):
             s.execute(cmd_builtin_open)
 
+

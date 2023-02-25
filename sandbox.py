@@ -25,9 +25,9 @@ WT_LIST = [
 'SyntaxWarning', 'RuntimeWarning', 'FutureWarning', 'ImportWarning', 'UnicodeWarning', 'BytesWarning', 'ResourceWarning', 'ConnectionError', 
 'BlockingIOError', 'BrokenPipeError', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionRefusedError', 'ConnectionResetError', 
 'FileExistsError', 'FileNotFoundError', 'IsADirectoryError', 'NotADirectoryError', 'InterruptedError', 'PermissionError',
-'ProcessLookupError', 'TimeoutError', 'copyright', 'credits', 'license', 'help', '_', 'exec'
+'ProcessLookupError', 'TimeoutError', 'copyright', 'credits', 'license', 'help', '_', 'exec',
 # BLOCK
-# 'open', 'eval', 'quit' , 'exit',
+#'open', 'eval', 'quit' , 'exit',
 ]
 
 class Sandbox(object):

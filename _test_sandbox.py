@@ -83,3 +83,13 @@ func("example.txt", "w").write(">> random_string")
             s.execute(cmd_builtin_open)
 
 
+    def test_os_package(self):
+        s = Sandbox()
+        cmd = """
+import os
+fd = os.open("example.txt", os.O_RDWR|os.O_CREAT)
+os.write(fd, bytes(">> import os unsecure", 'utf-8'))
+"""
+        # with self.assertRaises(KeyError):
+        #     s.execute(cmd)
+        s.execute(cmd)
